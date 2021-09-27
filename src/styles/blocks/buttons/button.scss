@@ -1,0 +1,16 @@
+.button {
+  font-size: 17px;
+  color: $white-color;
+  padding: 15px 7px;
+  line-height: 21px;
+  text-align: center;
+  display: block;
+  box-sizing: border-box;
+}
+
+.button--active {
+  background-color: $white-color;
+  border-radius: 30px;
+  color: $black-color;
+  text-transform: uppercase;
+}
