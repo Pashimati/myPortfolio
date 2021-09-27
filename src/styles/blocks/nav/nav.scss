@@ -1,0 +1,27 @@
+.nav {
+  width: 637px;
+  color: $white-color;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__link {
+    font: inherit !important;
+    color: $white-color;
+    text-decoration: none;
+  }
+
+  &__item {
+    flex-basis: 25%;
+  }
+}
+
+
+
+
+
