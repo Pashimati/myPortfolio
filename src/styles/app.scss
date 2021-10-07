@@ -3,9 +3,10 @@
 @import "blocks/buttons/button";
 @import "blocks/header/header";
 @import "blocks/index-preview/index-preview";
+@import "blocks/section-about/section-about";
 
 body {
-  background-color: $background-color;
+  background: $background-color
 }
 
 body {
@@ -91,4 +92,5 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 1351px;
   margin: 0 auto;
   padding: 0 15px;
+  min-height: 3000px;
 }
