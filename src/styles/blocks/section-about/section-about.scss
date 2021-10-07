@@ -1,0 +1,41 @@
+
+.section {
+    background-color:rgba(29, 29, 29, 1);
+    width: 100%;
+}
+
+.section-about {
+    max-width: 832px;
+    padding-left: 30px;
+    color: $white-color;
+    &__title {
+        padding: 45px 0;
+        font-size: 30px;
+        font-family:$montserrat-font;
+    }
+    &__text {
+        padding-bottom: 25px;
+        font-size: 15px;
+        font-family: $openSans-font;
+        line-height: 155%;   
+    }
+    &__item {
+        border-color: black;
+    }
+}
+
+.item {
+    text-align: center;
+    
+    width: 132px;
+    height: 32px;
+    border-left: 2px solid;
+    border-right: 2px solid;
+    
+    &__link {
+        color: $white-color;
+        font-family:$montserrat-font;
+        font-size: 15px;
+        
+    }
+}

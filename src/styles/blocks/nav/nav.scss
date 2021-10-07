@@ -1,5 +1,5 @@
 .nav {
-  width: 637px;
+  width: 530px;
   color: $white-color;
 
   &__list {
@@ -11,7 +11,9 @@
   }
 
   &__link {
-    font: inherit !important;
+    font-family: $montserrat-font;
+    font-weight: 700;
+    font-size: 17px;
     color: $white-color;
     text-decoration: none;
   }
@@ -20,7 +22,6 @@
     flex-basis: 25%;
   }
 }
-
 
 
 
