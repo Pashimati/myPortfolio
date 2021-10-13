@@ -1,8 +1,11 @@
 
 .section {
-    background-color:rgba(29, 29, 29, 1);
     width: 100%;
+    background:
+        rgba(29, 29, 29, 1)
+        url("img/logo-ITB.png") no-repeat  right 0px;
 }
+
 
 .section-about {
     max-width: 832px;

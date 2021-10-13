@@ -4,8 +4,8 @@
     // width: 100%;
     // height: 400px;
   background:
-          url("img/me.png") no-repeat bottom right,
-          linear-gradient(100deg,#D7D7D7 50%, #000 50%) ;
+          url("img/me.png")  bottom left 500px  /900px auto no-repeat,
+          linear-gradient(100deg,#D7D7D7 50%, #000 50%);
 
     &__left-block {
         font-family: $raleway-font;
