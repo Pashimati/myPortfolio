@@ -5,6 +5,11 @@
 @import "blocks/index-preview/index-preview";
 @import "blocks/section-about/section-about";
 @import "blocks/main/main";
+@import "blocks/link/link";
+@import "blocks/section-skills/section-skills";
+@import "blocks/section-portfolio/section-portfolio";
+@import "blocks/section-slider/section-slider";
+@import "blocks/footer/footer";
 
 body {
   background: $background-color
@@ -93,5 +98,4 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 1351px;
   margin: 0 auto;
   padding: 0 15px;
-  min-height: 3000px;
 }

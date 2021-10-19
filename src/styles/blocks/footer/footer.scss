@@ -1,0 +1,36 @@
+.footer {
+    background-color: #1A1A1A;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 70px 0;
+    &__link {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 44px;
+        gap: 10px;
+    }
+    &__img {
+        width: 15px;
+        height: 15px;
+        
+    }
+    &__tagline {
+        color: $white-color;
+        text-transform: uppercase;
+        font-family: $montserrat-font;
+        font-size: 15px;
+        font-weight: 700;
+    }
+    &__text {
+        color: $white-color;
+        font-size: 16px;
+    }
+}
+
+.footer-contacts {
+    display: flex;
+    padding-bottom: 44px;
+    gap: 28px;
+}
