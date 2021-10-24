@@ -1,0 +1,41 @@
+.section-skills {
+    &__wrap {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding-bottom: 200px;
+    }
+    &__overlay {
+        margin: 0 auto;
+    }
+}
+
+.block-skills {
+    
+    &__headline {
+        text-transform: uppercase;
+        font-family: $montserrat-font;
+        font-size: 30px;
+        font-weight: 700;
+        padding: 75px 0;
+    }
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 66px;
+    }
+    &__item {
+        flex-basis: 20%;
+        text-align: center;
+    }
+    &__img {
+        height: 100px;
+        width: auto;
+        margin-bottom: 10px;
+    }
+    &__desc {
+        text-transform: uppercase;
+        font-family: $montserrat-font;
+        font-size: 24px;
+        font-weight: 400;
+    }
+}
