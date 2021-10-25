@@ -1,0 +1,6 @@
+//объявление функции
+@mixin media_mobile ($max-width) {
+    @media screen and (max-width) {
+        @content;
+    }
+}
