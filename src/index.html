@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,8 +15,8 @@
     <title>Pavel Kashubovich</title>
 </head>
 <body>
-    <div class="container">
-        <div class="index-preview">
+    <div class="index-preview">
+        <div class="container">
             <header class="main-header">
                 <img class="main-header__logo" src="../dist/img/logo 1.svg" alt="Логотип">
                 <nav class="main-header__nav nav">
@@ -36,29 +36,32 @@
                     </ul>
                 </nav>
             </header>
-                <div class="index-preview__left-block">
-                    <h3 class="index-preview__title-text">Hi, I am</h3>
-                    <h1 class="index-preview__title">Pavel Kasubovich</h1>
-                    <ul class="index-preview__contacts">
-                        <li>
-                            <a href="#">
-                                <img src="../dist/img/mail.svg" alt="mail">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="../dist/img/git.svg" alt="git">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="../dist/img/in.svg" alt="in">
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-        </div>
-        <div class="section">
+            <div class="index-preview__left-block">
+                <h3 class="index-preview__title-text">Hi, I am</h3>
+                <h1 class="index-preview__title">Pavel Kashubovich</h1>
+                <span class="index-preview__subtitle">Front-end Developer / UI Designer</span>
+                <ul class="index-preview-contacts">
+                    <li class="index-preview-contacts__item">
+                        <a class="index-preview-contacts__link" href="#">
+                            <img class="index-preview-contacts__img" src="../dist/img/mail.svg" alt="mail">
+                        </a>
+                    </li>
+                    <li class="index-preview-contacts__item">
+                        <a class="index-preview-contacts__link" href="#">
+                            <img class="index-preview-contacts__img" src="../dist/img/giticon.svg" alt="git">
+                        </a>
+                    </li>
+                    <li class="index-preview-contacts__item">
+                        <a class="index-preview-contacts__link" href="#">
+                            <img class="index-preview-contacts__img" src="../dist/img/in.svg" alt="in">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>    
+    </div>
+    <main>
+        <section class="section section--description">
             <div class="section-about">
                 <h3 class="section-about__title">
                     IT BERRIES
@@ -70,28 +73,158 @@
                     Nunc egestas nisi eget enim gravida facilisis. Pellentesque laoreet varius turpis vel pharetra. 
                     Ut ante justo, consequat vitae elementum tempor, accumsan nec eros.  
                 </p>
-                <div class="section-about__item item">
-                    <a href="#" class="item__link">
+                    <a href="#" class="section-about__link link">
                         READ MORE
                     </a>
-                </div>
             </div>
-        </div>
-        <main class="content-box">
-            <h2 class="content-box__overlay">
+        </section>
+        <section class="content-box">
+            <h2 class="content-box__overlay overlay">
                 About me
             </h2>
             <p class="content-box__text">
                 Nulla in velit a metus rhoncus tempus. Nulla congue nulla vel sem varius finibus. Sed ornare sit amet lorem sed viverra. 
                 In vel urna quis libero viverra facilisis ut ac est.
             </p>
-            <a href="#" class="content-box__link item">
+            <a href="#" class="content-box__link link">
                 EXPLORE
             </a>
             <img class="content-box__img" src="img/separatorBlack.png" alt="separatorBlack">
-        </main>      
-    </div>
-        
+        </section>
+        <section class="section-skills">
+            <div class="section-skills__wrap">
+                <h2 class="section-skills__overlay overlay">
+                    skills
+                </h2>
+                <div class="block-skills">
+                    <h3 class="block-skills__headline">
+                        Using now :
+                    </h3>
+                    <ul class= "block-skills__items">
+                        <li class="block-skills__item">
+                            <img class="block-skills__img" src="../dist/img/html.svg" alt="html5">
+                            <p class="block-skills__desc">html5</p>
+                        </li>
+                        <li class="block-skills__item">
+                            <img class="block-skills__img" src="../dist/img/css.svg" alt="css3">
+                            <p class="block-skills__desc">css3</p>
+                        </li>
+                        <li class="block-skills__item">
+                            <img class="block-skills__img" src="../dist/img/sass.svg" alt="sass">
+                            <p class="block-skills__desc">sass</p>
+                        </li>
+                        <li class="block-skills__item">
+                            <img class="block-skills__img" src="../dist/img/js.svg" alt="javascript">
+                            <p class="block-skills__desc">javascript</p>
+                        </li>
+                        <li class="block-skills__item">
+                            <img class="block-skills__img" src="../dist/img/react.svg" alt="react">
+                            <p class="block-skills__desc">react</p>
+                        </li>
+                        <li class="block-skills__item">
+                            <img class="block-skills__img" src="../dist/img/bootstrap.svg" alt="bootstrap">
+                            <p class="block-skills__desc">bootstrap</p>
+                        </li>
+                        <li class="block-skills__item">
+                            <img class="block-skills__img" src="../dist/img/github.svg" alt="git">
+                            <p class="block-skills__desc">git</p>
+                        </li>
+                        <li class="block-skills__item">
+                            <img class="block-skills__img" src="../dist/img/figma.svg" alt="figma">
+                            <p class="block-skills__desc">figma</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="block-skills">
+                    <h3 class="block-skills__headline">
+                        learning :
+                    </h3>
+                    <ul class= "block-skills__items">
+                        <li class="block-skills__item">
+                            <img class="block-skills__img" src="../dist/img/nodeJS.svg" alt="NODEJS">
+                            <p class="block-skills__desc">NODEJS</p>
+                        </li>
+                        <li class="block-skills__item">
+                            <img class="block-skills__img" src="../dist/img/mySQL.svg" alt="MySQL">
+                            <p class="block-skills__desc">MySQL</p>
+                        </li>
+                        <li class="block-skills__item">
+                            <img class="block-skills__img" src="../dist/img/mongodb.svg" alt="MONGODB">
+                            <p class="block-skills__desc">MONGODB</p>
+                        </li>
+                        <li class="block-skills__item">
+                            <img class="block-skills__img" src="../dist/img/ts.svg" alt="TYPESCRIPT">
+                            <p class="block-skills__desc">TYPESCRIPT</p>
+                        </li>
+                    </ul>    
+                </div>
+                <div class="block-skills">
+                    <h3 class="block-skills__headline">
+                        OTHER SKILLS :
+                    </h3>
+                    <ul class= "block-skills__items">
+                        <li class="block-skills__item">
+                            <img class="block-skills__img" src="../dist/img/english.png" alt="english">
+                            <p class="block-skills__desc">english</p>
+                        </li>
+                        <li class="block-skills__item">
+                            <img class="block-skills__img" src="../dist/img/spanish.png" alt="spanish">
+                            <p class="block-skills__desc">spanish</p>
+                        </li>
+                        <li class="block-skills__item">
+                            <img class="block-skills__img" src="../dist/img/c++.png" alt="c++">
+                            <p class="block-skills__desc">c++</p>
+                        </li>
+                        <li class="block-skills__item">
+                            <img class="block-skills__img" src="../dist/img/c.png" alt="c">
+                            <p class="block-skills__desc">c</p>
+                        </li>
+                    </ul>    
+                </div>
+                
+
+            </div>
+        </section>
+        <div class="section section--portfolio">
+            <h2 class="section__title overlay">
+                Portfolio
+            </h2>
+        </div>
+        <section class="section-slider">
+    </main>
+    <footer class="footer">
+        <a class="footer__link" href="">
+            <img class="footer__img" src="../dist/img/double_arrow.svg" alt="double_arrow">
+            <span class="footer__tagline">
+                back to top
+            </span>
+        </a>
+        <ul class="social-contacts">
+            <li class="social-contacts__item">
+                <a class="social-contacts__link" href="#">
+                    <img class="social-contacts__img" src="../dist/img/facebook.svg" alt="facebook">
+                </a>
+            </li>
+            <li class="social-contacts__item">
+                <a class="social-contacts__link" href="#">
+                    <img class="social-contacts__img" src="../dist/img/icon_in.svg" alt="in">
+                </a>
+            </li>
+            <li class="social-contacts__item">
+                <a class="social-contacts__link" href="#">
+                    <img class="social-contacts__img" src="../dist/img/icon_instagram.svg" alt="instagram">
+                </a>
+            </li>
+            <li class="social-contacts__item">
+                <a class="social-contacts__link" href="#">
+                    <img class="social-contacts__img" src="../dist/img/icon_mail.svg" alt="mail">
+                </a>
+            </li>
+        </ul>
+        <p class="footer__text">
+            <b>@2021 Pavel Kashubovich</b> All Rights Reserved.
+        </p>
+    </footer>  
 <script src="../dist/bundle.js"></script>
 </body>
 </html>
