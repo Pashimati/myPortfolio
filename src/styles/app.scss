@@ -1,4 +1,5 @@
 @import "variables";
+@import "mixins/mixin";
 @import "blocks/nav/nav";
 @import "blocks/buttons/button";
 @import "blocks/header/header";
@@ -12,7 +13,11 @@
 @import "blocks/footer/footer";
 
 body {
-  background: $background-color
+  background: $background-color;
+  @include media_mobile($mobile-screen) {
+    background-color:  red;
+    font-size: 150px;
+  }
 }
 
 body {
