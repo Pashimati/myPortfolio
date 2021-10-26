@@ -12,7 +12,7 @@
   color: $black-color;
   text-transform: uppercase;
 
-  @include media_mobile($large-screen) {
+  @include media_mobile($mobile-screen) {
     border-radius: 0;
   }
 }
