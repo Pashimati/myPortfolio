@@ -3,7 +3,7 @@
   color: $white-color;
 
     @include media_mobile($large-screen) {
-    width: 400px;
+      width: 400px;
     }
 
   &__list {
@@ -12,15 +12,19 @@
     list-style: none;
     padding: 0;
     margin: 0;
+    top: 0;
+    margin: auto -25px;
+
     
     @include media_mobile($mobile-screen) {
-      justify-content: center;
-      flex-direction: column;
-      position: absolute;
-      left: 0;
-      right: 0;
-      
-
+        justify-content: center;
+        flex-direction: column;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 58px;
+        border-top: 1px solid red;
+        //display: none;
       }
   }
 
@@ -38,7 +42,15 @@
 
   &__item {
     max-width: 170px;
+
+    @include media_mobile($large-screen) {
+      max-width: 100%;
+    }
   }
+}
+
+.menu-open {
+  display: flex;
 }
 
 

@@ -3,16 +3,17 @@
 
     @include media_mobile($laptop-screen) {
         padding: 15px 20px 0 20px;
-       }
-    @include media_mobile($tablet-screen) {
-    padding: 10px 10px 0 10px;
     }
-    
+
+    @include media_mobile($tablet-screen) {
+        padding: 10px 10px 0 10px;
+    }
+
     background:
         linear-gradient(100deg,#D7D7D7 50%, #000 50%);
         @include media_mobile($mobile-screen) {
         background: $black-color;
-        }
+    }
 
     &__left-block {
         font-family: $raleway-font;
@@ -31,17 +32,17 @@
             }      
     }
     &__subtitle {
-            display: block;
-            font-size: 20px;
-            color: #909090;
-            margin-bottom: 120px;
+        display: block;
+        font-size: 20px;
+        color: #909090;
+        margin-bottom: 120px;
 
-            @include media_mobile($large-screen) {
-                font-size: 14px;
-               }
-            @include media_mobile($large-screen) {
+        @include media_mobile($large-screen) {
+            font-size: 14px;
+           }
+        @include media_mobile($large-screen) {
             font-size: 12px;
-            }   
+        }
             
     }
     &__title-text {
@@ -50,7 +51,7 @@
 
         @include media_mobile($large-screen) {
             font-size: 23px;
-           }   
+        }
     }
 }
 .index-preview-contacts {
