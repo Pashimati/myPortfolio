@@ -29,11 +29,6 @@ body {
   /*Обнуление*/
 
   background-color: $background-color;
-
-  @include media_mobile($mobile-screen) {
-    background-color: red;
-    font-size: 150px;
-  }
 }
 
 * {
@@ -102,8 +97,19 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------*/
 
 .container {
-  background:  url("img/me.png")  bottom right -140px  /1000px auto no-repeat;
+  background:  url("img/me.png")  bottom right -170px  /1000px auto no-repeat;
   max-width: 1351px;
   margin: 0 auto;
   padding: 0 15px;
+
+  @include media_mobile($large-screen) {
+    background:  url("img/me.png")  bottom right -170px  /850px auto no-repeat;
+   }
+   @include media_mobile($laptop-screen) {
+    background:  url("img/me.png")  bottom right -150px  /750px auto no-repeat;
+   }
+   @include media_mobile($tablet-screen) {
+    background:  url("img/me.png")  bottom right -150px  /650px auto no-repeat;
+   }
+
 }

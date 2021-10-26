@@ -1,27 +1,56 @@
 .index-preview {
     padding: 30px 70px 0 70px;
+
+    @include media_mobile($laptop-screen) {
+        padding: 15px 20px 0 20px;
+       }
+    @include media_mobile($tablet-screen) {
+    padding: 10px 10px 0 10px;
+    }
     
-  background:
-          linear-gradient(100deg,#D7D7D7 50%, #000 50%);
+    background:
+        linear-gradient(100deg,#D7D7D7 50%, #000 50%);
+        @include media_mobile($mobile-screen) {
+        background: $black-color;
+        }
 
     &__left-block {
         font-family: $raleway-font;
         font-weight: 700;
     }
     &__title {
-        font-size: 60px;
+        font-size: 58px;
+        @include media_mobile($large-screen) {
+            font-size: 40px;
+           }
+        @include media_mobile($laptop-screen) {
+        font-size: 33px;
+        }
+        @include media_mobile($tablet-screen) {
+            font-size: 29px;
+            }      
     }
     &__subtitle {
             display: block;
             font-size: 20px;
             color: #909090;
             margin-bottom: 120px;
+
+            @include media_mobile($large-screen) {
+                font-size: 14px;
+               }
+            @include media_mobile($large-screen) {
+            font-size: 12px;
+            }   
             
     }
     &__title-text {
         font-size: 30px;
         margin-bottom: 50px;
-        
+
+        @include media_mobile($large-screen) {
+            font-size: 23px;
+           }   
     }
 }
 .index-preview-contacts {
@@ -29,6 +58,16 @@
         display: flex;
         justify-content: space-between;
         padding-bottom: 250px;
+
+        @include media_mobile($large-screen) {
+            padding-bottom: 200px;
+           }
+        @include media_mobile($laptop-screen) {
+        padding-bottom: 150px;
+        }  
+        @include media_mobile($tablet-screen) {
+            padding-bottom: 100px;
+            }  
 
         &__item {
         background-color: #C4C4C4;
