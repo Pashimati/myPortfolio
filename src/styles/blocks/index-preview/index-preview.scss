@@ -21,7 +21,8 @@
         font-weight: 700;
         @include media_mobile($mobile-screen) {
             text-align: center;
-    }
+        }
+    }   
     &__title {
         font-size: 58px;
         @include media_mobile($large-screen) {
