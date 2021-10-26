@@ -12,12 +12,15 @@
     background:
         linear-gradient(100deg,#D7D7D7 50%, #000 50%);
         @include media_mobile($mobile-screen) {
-        background: $black-color;
+            background: url("img/mobile-background.png") no-repeat;
+            background-size: 100%;
     }
 
     &__left-block {
         font-family: $raleway-font;
         font-weight: 700;
+        @include media_mobile($mobile-screen) {
+            text-align: center;
     }
     &__title {
         font-size: 58px;

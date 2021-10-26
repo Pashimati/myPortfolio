@@ -96,12 +96,8 @@ h1, h2, h3, h4, h5, h6 {
 
 /*--------------------*/
 
-.container {
+.wrapper {
   background:  url("img/me.png")  bottom right -170px  /1000px auto no-repeat;
-  max-width: 1351px;
-  margin: 0 auto;
-  padding: 0 15px;
-
   @include media_mobile($large-screen) {
     background:  url("img/me.png")  bottom right -170px  /850px auto no-repeat;
    }
@@ -111,5 +107,14 @@ h1, h2, h3, h4, h5, h6 {
    @include media_mobile($tablet-screen) {
     background:  url("img/me.png")  bottom right -150px  /650px auto no-repeat;
    }
+   @include media_mobile($mobile-screen) {
+    background: none;
 
+  }
+}
+
+.container {
+  max-width: 1351px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
