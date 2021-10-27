@@ -1,3 +1,6 @@
+.main-wrap {
+    background: $background-color;
+}
 .content-box {
     max-width: 1351px;
     margin: 0 auto;
@@ -8,6 +11,11 @@
     align-items: center;
 
     font-family: $montserrat-font;
+
+    @include media_mobile($mobile-screen) {
+        padding: 90px 30px 0;
+        
+      }
     &__overlay {
         padding-bottom: 70px;
     }
@@ -30,6 +38,9 @@
     }
     &__img {
         padding: 85px 0 120px 0;
+        @include media_mobile($mobile-screen) {
+            padding: 70px 0px 100px 0;
+    }
     }
 }
 .overlay {
@@ -43,4 +54,9 @@
     width: 300px;
     height: 90px;
     border: 8px solid $black-color;
-}    
+
+    @include media_mobile($mobile-screen) {
+        font-size: 24px;
+        width: 240px;
+    }    
+}
