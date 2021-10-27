@@ -1,8 +1,0 @@
-.section-slider {
-    height: 400px;
-    background-color: #1d1d1d;
-
-    @include media_mobile($mobile-screen) {
-        height: 250px;
-    }
-}
