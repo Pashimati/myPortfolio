@@ -38,6 +38,10 @@ module.exports = {
                     from: path.resolve(__dirname, 'src/index.html'),
                     to: '.',
                 },
+                {
+                    from: path.resolve(__dirname, 'src/assets'),
+                    to: 'assets',
+                },
             ],
         }),
     ]
