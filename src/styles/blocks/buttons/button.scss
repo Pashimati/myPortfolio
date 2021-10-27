@@ -11,4 +11,8 @@
   border-radius: 30px;
   color: $black-color;
   text-transform: uppercase;
+  
+  @include media_mobile($mobile-screen) {
+    border-radius: 0;
+  }
 }

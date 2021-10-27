@@ -1,7 +1,6 @@
 .section--portfolio {
     background: url("img/sectionPortfolio.png") no-repeat;
-    background-size: 100%;
-    padding: 74px 0;
+    // background-size: 100%;
 }
 
 .section {
@@ -9,5 +8,12 @@
         margin: 0 auto;
         width: 400px;
         letter-spacing: 15px;
+        @include media_mobile($mobile-screen) {
+            width: 300px;
+            letter-spacing: 10px;
+
+        }
     }
+    
+    
 }

@@ -2,10 +2,19 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 220px;
+  align-items: center;
+  
+  @include media_mobile($mobile-screen) {
+    position: relative;
+   }
 
-
-  &__logo {
+  &__logo path {
     width: 55px;
     height: 50px;
+    
+    @include media_mobile($mobile-screen) {
+      fill: $white-color;
+      padding-bottom: 20px;
+    }
   }
 }

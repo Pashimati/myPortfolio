@@ -11,19 +11,27 @@
 @import "blocks/section-portfolio/section-portfolio";
 @import "blocks/section-slider/section-slider";
 @import "blocks/footer/footer";
+@import "blocks/slider/splide";
 
-body {
-  background: $background-color;
-  @include media_mobile($mobile-screen) {
-    background-color:  red;
-    font-size: 150px;
-  }
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
   margin: 0;
   padding: 0;
   /*Обнуление*/
+
+  background-color: $background-color;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -48,16 +56,7 @@ nav, footer, header, aside {
   display: block; 
 }
 
-html, body {
-  height: 100%;
-  width: 100%;
-  font-size: 100%;
-  line-height: 1;
-  font-size: 14px;
-  -ms-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%; 
-}
+
 
 input, button, textarea {
   font-family: inherit; 
@@ -97,10 +96,24 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------*/
+
+.wrapper {
+  background:  url("img/me.png")  bottom right -170px  /1000px auto no-repeat;
+  @include media_mobile($large-screen) {
+    background:  url("img/me.png")  bottom right -170px  /850px auto no-repeat;
+   }
+   @include media_mobile($laptop-screen) {
+    background:  url("img/me.png")  bottom right -150px  /750px auto no-repeat;
+   }
+   @include media_mobile($tablet-screen) {
+    background:  url("img/me.png")  bottom right -150px  /650px auto no-repeat;
+   }
+   @include media_mobile($mobile-screen) {
+    background: none;
+  }
 }
 
 .container {
-  background:  url("img/me.png")  bottom right -140px  /1000px auto no-repeat;
   max-width: 1351px;
   margin: 0 auto;
   padding: 0 15px;

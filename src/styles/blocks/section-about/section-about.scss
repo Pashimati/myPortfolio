@@ -12,8 +12,12 @@
 
 .section-about {
     max-width: 832px;
-    padding-left: 30px;
+    padding: 0 30px;
     color: $white-color;
+    @include media_mobile($mobile-screen) {
+        padding: 0 49px;
+        text-align: center;
+      }
     &__title {
         padding-bottom:  45px;
         font-size: 30px;
@@ -28,5 +32,13 @@
     
     &__link {
         color: $white-color;
+        &:hover {
+            background-color: $white-color;
+            color: $black-color;
+            transition: 3s;  
+        }
+        @include media_mobile($mobile-screen) {
+            margin: 0 auto;
+            }
     }
 }
