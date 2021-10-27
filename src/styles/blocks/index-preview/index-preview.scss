@@ -14,7 +14,7 @@
         @include media_mobile($mobile-screen) {
             background: url("img/mobile-background.png") no-repeat;
             background-size: 100%;
-    }
+        }
 
     &__left-block {
         font-family: $raleway-font;
