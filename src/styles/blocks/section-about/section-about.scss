@@ -32,6 +32,11 @@
     
     &__link {
         color: $white-color;
+        &:hover {
+            background-color: $white-color;
+            color: $black-color;
+            transition: 3s;  
+        }
         @include media_mobile($mobile-screen) {
             margin: 0 auto;
             }

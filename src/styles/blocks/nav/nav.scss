@@ -35,6 +35,11 @@
     font-size: 17px;
     color: $white-color;
     text-decoration: none;
+    &:hover {
+      color: $black-color;
+      background-color: $white-color;
+      border-radius: 30px;
+    }
 
     @include media_mobile($large-screen) {
       font-size: 16px;

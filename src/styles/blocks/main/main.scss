@@ -34,7 +34,13 @@
     }
     &__link {
         color: $black-color;
-           
+        &:hover {
+        border-left: 2px solid $white-color;
+        border-right: 2px solid $white-color;
+        color: $white-color;
+        background-color: $black-color;
+        transition: 3s;
+        }   
     }
     &__img {
         padding: 85px 0 120px 0;
