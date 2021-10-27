@@ -16,26 +16,55 @@
         font-family: $montserrat-font;
         font-size: 30px;
         font-weight: 700;
-        padding: 75px 0;
+        margin: 75px 0;
+        padding: 30px;
+        @include media_mobile($tablet-screen) {
+            text-align: center;
+           }
+        @include media_mobile($mobile-screen) {
+            font-size: 25px;
+            margin: 50px 0;
+        }
     }
     &__items {
         display: flex;
         flex-wrap: wrap;
         gap: 30px 0;
+        @include media_mobile($tablet-screen) {
+            gap: 50px 0;
+           }
     }
     &__item {
         flex-basis: 25%;
         text-align: center;
+        @include media_mobile($tablet-screen) {
+            flex-basis: 33.33%;
+           }
+        @include media_mobile($mobile-screen) {
+            flex-basis: 50%;
+        }
     }
     &__img {
         height: 100px;
         width: auto;
         margin-bottom: 10px;
+        @include media_mobile($tablet-screen) {
+            height: 80px;
+           }
+        @include media_mobile($mobile-screen) {
+            height: 60px;
+        }
     }
     &__desc {
         text-transform: uppercase;
         font-family: $montserrat-font;
         font-size: 24px;
         font-weight: 400;
+        @include media_mobile($tablet-screen) {
+            font-size: 22px;
+           }
+        @include media_mobile($mobile-screen) {
+            font-size: 20px;
+        }
     }
 }
