@@ -14,5 +14,8 @@
   
   @include media_mobile($mobile-screen) {
     border-radius: 0;
+    background-color: $white-color;
+    color: $black-color;
+    text-transform: uppercase;
   }
 }

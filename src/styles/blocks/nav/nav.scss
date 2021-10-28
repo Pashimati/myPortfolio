@@ -46,6 +46,9 @@
     }
     @include media_mobile($mobile-screen) {
       font-size: 18px;
+      &:hover {
+        border-radius: 0;
+      }
     }
   }
 

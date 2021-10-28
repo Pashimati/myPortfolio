@@ -43,6 +43,9 @@
         @include media_mobile($mobile-screen) {
             flex-basis: 50%;
         }
+        &:hover {
+            transform: rotateZ(20deg);
+        }
     }
     &__img {
         height: 100px;

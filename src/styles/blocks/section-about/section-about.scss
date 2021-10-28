@@ -35,7 +35,7 @@
         &:hover {
             background-color: $white-color;
             color: $black-color;
-            transition: 3s;  
+            transition: 1s;  
         }
         @include media_mobile($mobile-screen) {
             margin: 0 auto;
