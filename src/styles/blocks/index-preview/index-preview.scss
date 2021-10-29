@@ -101,18 +101,8 @@
             background-color: $white-color;
             box-shadow: none;
             border-radius: 7px;
-            @include media_mobile($mobile-screen) {
-                background-color: $black-color;
-                border-radius: 7px;
-            }
         }
-
-        @include media_mobile($mobile-screen) {
-            background-color: transparent;
-            padding: 0;
-            box-shadow: none;
-            }
-        }
+    }      
 }
 .index-preview-contacts__img path {
     @include media_mobile($mobile-screen) {
