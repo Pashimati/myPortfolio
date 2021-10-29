@@ -17,4 +17,10 @@
       padding-bottom: 20px;
     }
   }
+  &__link {
+    &:hover {
+      transform: rotate(40deg);
+	    transition: all .5s linear;
+    }
+  }
 }
