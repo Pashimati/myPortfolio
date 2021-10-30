@@ -14,7 +14,12 @@
         align-items: center;
         margin-bottom: 44px;
         gap: 10px;
-        
+        position: relative;
+
+        animation: bouncing 0.5s cubic-bezier(0.1,0.25,0.1,1) 0s infinite alternate both;
+        &:hover {
+            animation-play-state: paused;
+        }
         
     }
     &__img {
@@ -22,7 +27,6 @@
         width: 15px;
         height: 15px;
         animation: bouncing 0.5s cubic-bezier(0.1,0.25,0.1,1) 0s infinite alternate both;
-        
     }
     &__tagline {
         display: block;
