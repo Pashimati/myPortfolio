@@ -29,7 +29,6 @@
     "webpack-cli": "^4.8.0"
   },
   "dependencies": {
-    "@splidejs/splide": "^3.2.1",
     "copy-webpack-plugin": "^9.0.1"
   }
 }
