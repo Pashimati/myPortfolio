@@ -1,5 +1,5 @@
 import './styles/app.scss';
-import Splide from '@splidejs/splide';
+import Splide from './assets/splide/splide';
 
 new Splide( '.splide', {
     perPage: 1,
