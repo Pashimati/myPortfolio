@@ -1,0 +1,44 @@
+
+.section {
+    width: 100%;
+    padding: 50px 0;
+}
+
+.section--description {
+    background:
+    rgba(29, 29, 29, 1)
+    url("img/logo-ITB.png") no-repeat  right 0px;
+}
+
+.section-about {
+    max-width: 832px;
+    padding: 0 30px;
+    color: $white-color;
+    @include media_mobile($mobile-screen) {
+        padding: 0 49px;
+        text-align: center;
+      }
+    &__title {
+        padding-bottom:  45px;
+        font-size: 30px;
+        font-family:$montserrat-font;
+    }
+    &__text {
+        padding-bottom: 25px;
+        font-size: 15px;
+        font-family: $openSans-font;
+        line-height: 155%;   
+    }
+    
+    &__link {
+        color: $white-color;
+        &:hover {
+            background-color: $white-color;
+            color: $black-color;
+            transition: 1s;  
+        }
+        @include media_mobile($mobile-screen) {
+            margin: 0 auto;
+            }
+    }
+}
