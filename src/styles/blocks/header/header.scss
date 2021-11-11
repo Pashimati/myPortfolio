@@ -23,4 +23,24 @@
 	    transition: all .5s linear;
     }
   }
+  &__menu {
+    position: absolute;
+    right: 0;
+    display: none;
+    @include media_mobile($mobile-screen) {
+      display: block;
+      background-color: transparent;
+    }
+  }
+  &__menu-open {
+    display: none;
+  }
+  &__menu-close {
+    display: block;
+    
+  }
+}
+
+.menu-close {
+  display: none;
 }
