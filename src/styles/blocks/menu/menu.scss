@@ -1,0 +1,19 @@
+.main-header__menu-close {
+  display: none;
+}
+
+.main-header__menu-open {
+  display: block;
+}
+
+.modal-open .main-header__menu-close {
+  display: block;
+}
+
+.modal-open .main-header__menu-open {
+  display: none;
+}
+
+.modal-open .nav__list {
+  display: block;
+}

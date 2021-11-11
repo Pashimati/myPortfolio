@@ -13,7 +13,10 @@
     padding: 0;
     margin: 0;
     top: 0;
-    
+
+    @include media_mobile($mobile-screen) {
+      display: none;
+    }
 
     
     @include media_mobile($mobile-screen) {
