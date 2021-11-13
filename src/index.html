@@ -302,6 +302,20 @@
     menuButton.addEventListener('click', openModal)
 
 </script>
+
+<script>
+    const buttonToTop = document.querySelector(".footer__link");
+
+    const backToTop = function () {
+        if (window.pageYOffset > 0) {
+            window.scrollBy(0, -80);
+            setTimeout(backToTop, 0);
+        }
+    };
+
+    buttonToTop.addEventListener('click', backToTop);
+
+</script>
 <script src="bundle.js"></script>
 </body>
 </html>
