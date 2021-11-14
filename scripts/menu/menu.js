@@ -1,1 +1,1 @@
-let menuButton=document.querySelector(".main-header__menu"),header=document.querySelector(".main-header");const openModal=function(){header.classList.toggle("modal-open")};menuButton.addEventListener("click",openModal);
+let menuButton=document.querySelector(".menuButton"),listMenu=document.querySelector(".listMenu");const openModal=function(){listMenu.classList.toggle("modal-open")};menuButton.addEventListener("click",openModal);
