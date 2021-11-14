@@ -290,32 +290,35 @@
             <b>@2021 Pavel Kashubovich</b> All Rights Reserved.
         </p>
     </footer>
+    <script src="scripts/menu/menu.js"></script>
+    <script>
+        //заменить на отдельный класс
+        const buttonToTop = document.querySelector(".footer__link");
 
-<script> 
-    let menuButton = document.querySelector(".main-header__menu");
-    let header = document.querySelector('.main-header');
+        const backToTop = function (e) {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                left: 0,
+                behavior: 'smooth'
+            });
+        };
 
-    const openModal = function () {
-        header.classList.toggle('modal-open');
-    }
-
-    menuButton.addEventListener('click', openModal)
-
-</script>
-
-<script>
-    const buttonToTop = document.querySelector(".footer__link");
-
-    const backToTop = function () {
-        if (window.pageYOffset > 0) {
-            window.scrollBy(0, -80);
-            setTimeout(backToTop, 0);
-        }
-    };
-
-    buttonToTop.addEventListener('click', backToTop);
-
-</script>
+        buttonToTop.addEventListener('click', backToTop);
+    </script>
+    <script>
+        const firstView = document.querySelector('.container');
+        const firsViewHeight = firstView.clientHeight;
+        const scrollTopButton = document.querySelector('#scrollToTopBtn');
+        window.addEventListener('scroll', () => {
+            const currentY = pageYOffset;
+            if (currentY > firsViewHeight) {
+                scrollTopButton.style.visibility = 'visible';
+            } else {
+                scrollTopButton.style.visibility = 'hidden';
+            }
+        });
+    </script>
 <script src="bundle.js"></script>
 </body>
 </html>
