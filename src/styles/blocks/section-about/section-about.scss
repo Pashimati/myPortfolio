@@ -7,7 +7,7 @@
 .section--description {
     background:
     rgba(29, 29, 29, 1)
-    url("src/img/logo-ITB.png") no-repeat  right 0px;
+    url("img/Logo-ITB.png") no-repeat  right 0px;
 }
 
 .section-about {
@@ -15,19 +15,39 @@
     padding: 0 30px;
     color: $white-color;
     @include media_mobile($mobile-screen) {
-        padding: 0 49px;
+        padding: 0 15px;
         text-align: center;
       }
     &__title {
         padding-bottom:  45px;
         font-size: 30px;
         font-family:$montserrat-font;
+        text-transform: uppercase;
     }
-    &__text {
+    &__list {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-bottom: 35px;
+    }
+    &__item {
+        position: relative;
+        text-align: left;
+        list-style: none;
         padding-bottom: 25px;
-        font-size: 15px;
+        font-size: 18px;
         font-family: $openSans-font;
-        line-height: 155%;   
+        line-height: 155%;
+        padding-left: 30px;
+        &:before {
+            position: absolute;
+            content: '\25ba';
+            color: $white-color;
+            left: 0px;
+        }
+        @include media_mobile($mobile-screen) {
+            font-size: 14px;
+        }
     }
     
     &__link {
